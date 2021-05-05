@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Syntax and Selectors</title>
+</head>
+<body>
+    <P>
+  <h1>CSS Syntax and Selectors</h1> 
+  <h2>CSS Syntax</h2>
+  A CSS rule-set consists of a selector and a declaration block: <br> <br>
+  <img src="selector.gif" alt=""> <br> <br>
+  The selector points to the HTML element you want to style.<br> <br>
+  The declaration block contains one or more declarations separated by semicolons.<br> <br>
+
+Each declaration includes a CSS property name and a value, separated by a colon.<br> <br>
+
+A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.<br> <br>
+
+In the following example all <b>p</b> elements will be center-aligned, with a red text color <br> <br>
+<h3>Example</h3>
+<xmp>
+    p {
+        color: red;
+        text-align: center;
+    }
+</xmp>
+<h3>Results</h3>
+<p style="color: red; text-align: center;">
+This is a parragraph with center text-aling and red color</p>
+<h1>CSS Selectors</h1> 
+CSS selectors are used to "find" (or select) HTML elements based on their element name, id, class, attribute, and more.
+<h1>The element Selector</h1>
+The element selector selects elements based on the element name. <br><br>
+You can select all <b>p</b> elements on a page like this (in this case, all <b>p</b> elements will be center-aligned, with a red text color):
+<h3>Example</h3>
+<xmp>
+    p {
+        color: red;
+        text-align: center;
+    }
+</xmp>
+<h1>The id Selector</h1>
+The id selector uses the id attribute of an HTML element to select a specific element. <br><br>
+The id of an element should be unique within a page, so the id selector is used to select one unique element! <br><br>
+To select an element with a specific id, write a hash (#) character, followed by the id of the element. <br><br>
+The style rule below will be applied to the HTML element with id="para1":
+<h3>Example</h3>
+<xmp>
+    #para1 {
+        color: red;
+        text-align: center;
+        }
+</xmp>
+<b>Note:</b> An id name cannot start with a number!
+<h1>The class Selector</h1>
+The class selector selects elements with a specific class attribute.<br><br>
+
+To select elements with a specific class, write a period (.) character, followed by the name of the class.<br><br>
+
+In the example below, all HTML elements with class="center" will be red and center-aligned:
+<h3>Example</h3>
+<xmp>
+    .center {
+        text-align: center;
+        color: red;
+        }
+</xmp>
+You can also specify that only specific HTML elements should be affected by a class. <br><br>
+In the example below, only <b>p</b> elements with class="center" will be center-aligned:
+    <h3>Example</h3>
+<xmp>
+    p.center {
+        text-align: center;
+        color: red;
+        }
+</xmp>
+HTML elements can also refer to more than one class. <br><br>
+In the example below, the <b>p</b> element will be styled according to class="center" and to class="large":
+<h3>Example</h3>
+<xmp>
+    <p class="center large">This paragraph refers to two classes.</p>
+</xmp>
+<b>Note:</b> A class name cannot start with a number!
+<h1>Grouping Selectors</h1>
+If you have elements with the same style definitions, like this:
+<xmp>
+    h1 {
+        text-align: center;
+        color: red;
+    }
+    
+    h2 {
+        text-align: center;
+        color: red;
+    }
+    
+    p {
+        text-align: center;
+        color: red;
+    }
+</xmp>
+It will be better to group the selectors, to minimize the code. <br><br>
+To group selectors, separate each selector with a comma. <br><br>
+In the example below we have grouped the selectors from the code above:
+<h3>Example</h3>
+<xmp>
+    h1, h2, p {
+        text-align: center;
+        color: red;
+    }
+</xmp>
+<h1>CSS Comments</h1>
+Comments are used to explain the code, and may help when you edit the source code at a later date.<br><br>
+
+Comments are ignored by browsers.<br><br>
+
+A CSS comment starts with /* and ends with */. Comments can also span multiple lines:<br><br>
+<h3>Example</h3>
+<xmp>p {
+    color: red;
+    /* This is a single-line comment */
+    text-align: center;
+}
+
+/* This is
+a multi-line
+comment */
+</xmp>
+</P> 
+</body>
+</html>

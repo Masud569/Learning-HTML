@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links</title>
+</head>
+<body>
+    <h1>HTML Links</h1>
+    <p>
+        Links are found in nearly all web pages. Links allow users to click their way from page to page.
+    </p>
+    <h1>HTML Links - Hyperlinks</h1>
+    <p>
+        HTML links are hyperlinks. <br><br>
+        A hyperlink is a text or an image you can click on, and jump to another document.
+    </p>
+    <h1>HTML Links - Syntax</h1>
+    <p>
+        In HTML, links are defined with the <b>a</b> tag:
+    </p>
+    <xmp><a href="url">link text</a></xmp>
+    <h3>Example</h3>
+    <xmp><a href="http://www.w3schools.com/html/">Visit our HTML tutorial</a></xmp>
+    <h3>Results</h3>
+    <a href="http://www.w3schools.com/html/">Visit our HTML tutorial</a>
+    <p>
+        The href attribute specifies the destination address <br> (http://www.w3schools.com/html/) <br><br>
+        The <b>link text</b>  is the visible part (Visit our HTML tutorial). <br><br>
+        Clicking on the link text, will send you to the specified address. <br><br><br>
+        * The link text does not have to be text. It can be an HTML image or any other HTML element. <br>
+        * Without a trailing slash on subfolder addresses, you might generate two requests to the server. Many servers will automatically add a trailing slash to the address, and then create a new request.
+    </p>
+    <br>
+    <p>
+        <h1>HTML Links - Colors</h1>
+        When you move the mouse over a link, two things will normally happen: <br><br>
+        * The mouse arrow will turn into a little hand <br>
+        * The color of the link element will change <br><br>
+        By default, a link will appear like this (in all browsers): <br>
+        * An unvisited link is underlined and blue <br>
+        * A visited link is underlined and purple <br>
+        * An active link is underlined and red <br> <br>
+        You can change the default colors, by using styles: 
+        <h3>Example</h3>
+        <xmp>
+        <style>
+            a:link    {color:green; background-color:transparent; text-decoration:none}
+            a:visited {color:pink; background-color:transparent; text-decoration:none}
+            a:hover   {color:red; background-color:transparent; text-decoration:underline}
+            a:active  {color:yellow; background-color:transparent; text-decoration:underline}
+        </style>
+        </xmp>
+    </p>
+
+    
+</body>
+</html>

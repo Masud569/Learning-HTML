@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attributes</title>
+</head>
+<body>
+    <h1>HTML Attributes</h1>
+    <p>
+        Attributes provide additional information about HTML elements.
+        <br><br>
+        * HTML elements can have attributes <br>
+        * Attributes provide additional information about an element <br>
+        * Attributes are always specified in the start tag <br>
+        * Attributes come in name/value pairs like: name="value"
+    </p> 
+    <br>
+    <h1>The lang Attribute</h1>
+    <xmp>
+        The document language can be declared in the <html> tag.
+
+        The language is declared in the lang attribute.
+
+        Declaring a language is important for accessibility applications (screen readers) and search engines:
+    </xmp>
+    <xmp style="border: 1px solid black; width: 500px; margin: 50px;">
+        <!DOCTYPE html>
+        <html lang="en-US">
+        <body>
+
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+
+        </body>
+        </html>
+    </xmp>
+    <p>
+        The first two letters specify the language (en). If there is a dialect, use two more letters (US).
+    </p>
+    <h1>The title Attribute</h1>
+    <xmp>
+        HTML paragraphs are defined with the <p> tag.
+
+            In this example, the <p> element has a title attribute. The value of the attribute is "About W3Schools":
+
+
+        Example
+            <p title="About W3Schools">
+            W3Schools is a web developer's site.
+            It provides tutorials and references covering
+            many aspects of web programming,
+            including HTML, CSS, JavaScript, XML, SQL, PHP, ASP, etc.
+            </p>
+    </xmp>
+    <h1>The href Attribute</h1>
+    <xmp>
+        HTML links are defined with the <a> tag. The link address is specified in the href attribute:
+
+        Example
+        <a href="http://www.w3schools.com">This is a link</a>
+    </xmp>
+    <h1>Size Attributes</h1>
+    <xmp>
+        HTML images are defined with the <img> tag.
+
+        The filename of the source (src), and the size of the image (width and height) are all provided as attributes:
+
+        Example
+        <img src="w3schools.jpg" width="104" height="142">
+
+        The image size is specified in pixels: width="104" means 104 screen pixels wide.        
+    </xmp>
+    <h1>The alt Attribute</h1>
+    <xmp>
+        The alt attribute specifies an alternative text to be used, when an HTML element cannot be displayed.
+
+        The value of the attribute can be read by "screen readers". This way, someone "listening" to the webpage, i.e. a blind person, can "hear" the element.
+
+        Example
+        <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+    </xmp>
+    <h1>HTML Horizontal Rules</h1>
+    <xmp>
+        The <hr> tag creates a horizontal line in an HTML page.
+        The hr element can be used to separate content:
+
+        Example
+        <p>This is a paragraph.</p>
+        <hr>
+        <p>This is a paragraph.</p>
+        <hr>
+        <p>This is a paragraph.</p>
+    </xmp>
+    <p>This is a paragraph.</p>
+    <hr>
+    <p>This is a paragraph.</p>
+    <hr>
+    <p>This is a paragraph.</p>
+    <br>
+    <xmp>
+    The HTML <head> element
+        
+        The HTML <head> element has nothing to do with HTML headings.
+
+        The HTML <head> element contains meta data. Meta data are not displayed.
+                
+        The HTML <head> element is placed between the <html> tag and the <body> tag:
+
+
+    Example
+
+    <!DOCTYPE html>
+    <html>
+    
+    <head>
+      <title>My First HTML</title>
+      <meta charset="UTF-8">
+    </head>
+    
+    <body>
+    .
+    .
+    .
+    </xmp>
+    <br>
+    <xmp>
+    The HTML <title> Element 
+
+    The HTML <title> element is meta data. It defines the HTML document's title.
+
+    The title will not be displayed in the document, but might be displayed in the browser tab.
+    </xmp>
+    <br>
+    <xmp>
+    The HTML <meta> Element
+
+    The HTML <meta> element is also meta data.
+
+    It can be used to define the character set, and other information about the HTML document.
+
+
+    More Meta Elements
+
+    In the chapter about HTML styles you discover more meta elements:
+
+    The HTML <style> element is used to define internal CSS style sheets.
+
+    The HTML <link> element is used to define external CSS style sheets.
+    </xmp>
+</body>
+</html>

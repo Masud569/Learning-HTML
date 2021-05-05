@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Style - CSS</title>
+</head>
+<body>
+    <h1>
+        HTML Style - CSS
+    </h1>
+    <h3>Styling HTML with CSS</h3>
+    <p>
+        CSS stands for Cascading Style Sheets <br><br>
+        Styling can be added to HTML elements in 3 ways:
+        <xmp>
+            * Inline - using a style attribute in HTML elements <br>
+            * Internal - using a <style> element in the HTML <head> section
+            * External - using one or more external CSS files
+        </xmp>
+        The most common way to add styling, is to keep the styles in separate CSS files. But, in this tutorial, we use internal styling, because it is easier to demonstrate, and easier for you to try it yourself.
+    </p>
+    <h1>Inline Styling (Inline CSS)</h1>
+    <h3>Example</h3>
+    <xmp><h1 style="color:blue;">This is a Blue Heading</h1></xmp>
+    <h2 style="color:blue;">This is a Blue Heading</h2>
+    
+    <h1>Internal Styling (Internal CSS)</h1>
+    <h3>Example</h3>
+<xmp>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color:lightgrey;}
+h1   {color:blue;}
+p    {color:green;}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+    </xmp>
+
+<h1>External Styling (External CSS)</h1>
+<P>
+    An external style sheet is used to define the style for many pages. <br><br>
+    With an <b>external style sheet,</b> you can change the look of an entire web site by changing one file! <br> <br>
+    To use an external style sheet, add a link to it in the <b>head</b> section of the HTML page:
+
+    <h1>Example</h1>
+    <XMP>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+    </XMP>
+
+    An external style sheet can be written in any text editor. The file should not contain any html tags. The style sheet file must be saved with a .css extension.
+    <br> <br>
+    Here is how the "styles.css" looks:
+    <br><br>
+    body {<br>
+        background-color: lightgrey;<br>
+    }
+    <br><br>
+    h1 {<br>
+        color: blue;<br>
+    }
+    <br><br>
+    p {<br>
+        color:green;<br>
+    } <br> <br>
+    <h3>The CSS Box Model</h3>
+    Every HTML element has a box around it, even if you cannot see it. <br><br>
+    The CSS <b>border</b> property defines a visible border around an HTML element:
+    <br><br>
+    The CSS <b>padding</b> property defines a padding (space) inside the border:
+    <br><br>
+    The CSS <b>margin</b> property defines a margin (space) outside the border:
+
+
+    <h3>Example</h3>
+    p {<br>
+        border: 1px solid black;<br>
+        padding: 10px;<br>
+        margin: 30px;<br>
+    }
+    <h1>The id Attribute</h1>
+    All the examples above use CSS to style HTML elements in a general way. <br><br>
+    To define a special style for one special element, first add an id attribute to the element: <br><br>
+    <xmp><p id="p01">I am different</p></xmp>
+    then define a style for the element with the specific id: <br> 
+    <h3>Example</h3>
+    #p01 { <br>
+        color: blue; <br>
+    }
+
+    <h1>The class Attribute</h1>
+    To define a style for a special type (class) of elements, add a class attribute to the element:
+    <xmp><p class="error">I am different</p></xmp>
+    Now you can define a different style for elements with the specific class:
+    <h3>Example</h3>
+    p.error { <br>
+        color: red; <br>
+    }
+</P>
+</body>
+</html>
