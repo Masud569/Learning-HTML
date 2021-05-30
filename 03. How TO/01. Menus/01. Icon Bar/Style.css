@@ -2,26 +2,45 @@ body {
     margin: 0;
 }
 
-.icon-bar {
+.icon-bar-horizontal {
     width: 100%;
     background-color: #555;
     overflow: auto;
+    margin-bottom: 50px;
 }
 
-.icon-bar a {
+.icon-bar-horizontal a {
     float: left;
     width: 20%;
     text-align: center;
     padding: 12px 0;
-    transition: all 0.3s ease;
     color: white;
     font-size: 36px;
-}
-
-.icon-bar a:hover {
-    background-color: #000;
+    transition: all 0.4s ease;
 }
 
 .active {
-    background-color: #04AA6D;
+    background-color: #06aa6d;
+}
+
+.icon-bar-horizontal a:hover {
+    background-color: #000;
+}
+
+.icon-bar-vertical {
+    width: 90px;
+    background-color: #666;
+}
+
+.icon-bar-vertical a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    font-size: 36px;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.icon-bar-vertical a:hover {
+    background-color: #000;
 }
