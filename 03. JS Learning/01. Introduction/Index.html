@@ -9,11 +9,20 @@
 </head>
 <body>
 <h2>What Can JavaScript Do?</h2>
+<h3>01.</h3>
+<p id="demo1">Java Script Cange HTML Content</p>
 
-<p id="demo">Java Script Cange HTML Content</p>
-
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Hellow Java Script!" '>Click Me!</button>
+<button type="button" onclick='document.getElementById("demo1").innerHTML = "Hellow Java Script!" '>Click Me!</button>
 
 
+<br><br>
+<h3>02.</h3>
+<p id="demo2">JavaScript Can Change HTML Attribute Values</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img src="pic_bulboff.gif" id="myImage" style="width: 100px;">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
 </body>
 </html>
